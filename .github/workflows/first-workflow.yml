@@ -9,11 +9,11 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     env:
-      Greeting: HelloWorld!
+      GREETING: HelloWorld!
 
     steps:
     - name: Step one
-      run: echo "Step 1 complete! Passed in value is <$Greeting>"
+      run: echo "Step 1 complete! Passed in value is $GREETING"
     - name: Step two
       run: echo "Step 2 complete!"
       
