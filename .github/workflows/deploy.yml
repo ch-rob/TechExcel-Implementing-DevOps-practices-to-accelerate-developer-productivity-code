@@ -2,9 +2,9 @@ name: Deploy Bicep file
 on:   workflow_dispatch
 
 permissions:
-    id-token: write
-    contents: read
-    pages: read
+  id-token: write
+  contents: read
+  pages: read
     
 env:
   targetEnv: dev
