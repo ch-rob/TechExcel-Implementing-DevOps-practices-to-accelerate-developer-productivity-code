@@ -75,7 +75,7 @@ jobs:
     needs: dockerBuildPush
     environment:
       name: dev
-      url: https://{your_prefix}-dev.azurewebsites.net/
+      url: https://bxvayolsam5sm-dev.azurewebsites.net/
     
     steps:
       - name: 'Login via Azure CLI'
@@ -88,7 +88,7 @@ jobs:
         
       - uses: azure/webapps-deploy@v2
         with:
-          app-name: '{your_prefix}-dev'
+          app-name: 'bxvayolsam5sm-dev'
           images: bxvayolsam5smmpnpreg.azurecr.io/techboost/dotnetcoreapp:${{github.run_number}}
 
   deploy-to-test:
@@ -97,7 +97,7 @@ jobs:
     needs: deploy-to-dev
     environment:
       name: test
-      url: https://{your_prefix}-test.azurewebsites.net/
+      url: https://bxvayolsam5sm-test.azurewebsites.net/
     
     steps:
     - uses: actions/checkout@v3
