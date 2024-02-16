@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using RazorPagesTestSample.Data;
-// Test to deply docker with .net 8.0
+// Test to deply docker with .net 8.0, now deploying to each env
 namespace RazorPagesTestSample
 {
     public class Program
